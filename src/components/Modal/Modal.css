@@ -1,0 +1,116 @@
+.modal{
+    position: fixed;
+    top: 2%;
+
+    width: 800px;
+    height: 160px;
+    background-color: #00000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    display:none;
+   
+}
+.visible{
+    display: block !important;
+}
+
+.popup {
+    background-color: var(--color-magnolia);
+    border: 1px solid var(--color-light-gray);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    padding: 24px;
+  }
+  
+  .popup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  
+  .popup-title {
+    color: var(--color-marine-blue);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .popup-close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+  }
+  
+  .popup-close-button::before,
+  .popup-close-button::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 5%;
+    background-color: var(--color-cool-gray);
+    position: absolute;
+    top: 15%;
+    right:5%;
+    transform: translateY(-50%);
+  }
+  
+  .popup-close-button::before {
+    transform: rotate(45deg);
+  }
+  
+  .popup-close-button::after {
+    transform: rotate(-45deg);
+  }
+  
+  .popup-content {
+    margin-bottom: 24px;
+  }
+  
+  .popup-message {
+    color: var(--color-marine-blue);
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .popup-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .popup-cancel-button {
+    background-color: var(--color-light-blue);
+    border: none;
+    border-radius: 4px;
+    color: var(--color-marine-blue);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 8px;
+    padding: 8px 16px;
+  }
+  .popup-cancel-button:hover{
+  background-color:  var(--color-purplish-blue);
+  color: var(--color-magnolia);
+  }
+  
+  .popup-confirm-button {
+    background-color: var(--color-purplish-blue);
+    border: none;
+    border-radius: 4px;
+    color: var(--color-magnolia);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+  }
+  .popup-confirm-button:hover{
+    background-color:var(--color-marine-blue);
+   
+  }
+  
